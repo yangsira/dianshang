@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_24"
+        android:background="@drawable/rxxp_shap_bg">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/mlss_image"
+            android:layout_width="@dimen/dp_85"
+            android:layout_height="@dimen/dp_98"
+            android:layout_margin="@dimen/dp_10"
+            android:src="@mipmap/ic_launcher"
+            app:placeholderImage="@mipmap/ic_launcher"
+            app:roundAsCircle="true"
+            app:roundingBorderWidth="@dimen/dp_10" />
+
+        <TextView
+            android:id="@+id/mlss_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_toRightOf="@+id/mlss_image"
+            android:maxLength="9"
+            android:text="123"
+            android:textColor="#666666"
+            android:textSize="@dimen/dp_12" />
+
+        <TextView
+            android:id="@+id/mlss_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_toRightOf="@+id/mlss_image"
+            android:text="123"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/dp_14" />
+    </RelativeLayout>
+
+</RelativeLayout>
